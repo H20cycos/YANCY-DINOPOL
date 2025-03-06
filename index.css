@@ -1,0 +1,450 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #18122B;
+    font-family: sans-serif;
+}
+a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+.navbar {
+    color: white;
+    text-decoration: none;
+    background-color: #2b1c5cd0;
+    display: flex;
+    margin-right: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+.navbar .logo {
+    font-size: 30px;
+    font-weight: 800;
+    transition: .4s;
+}
+.navbar ul {
+    display: flex;
+}
+.navbar ul li {
+    list-style: none;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 550;
+    transition: .4s;
+}
+.navbar ul li a{
+    transition: 1s;
+}
+.navbar ul li a:hover {
+    color: rgb(105, 255, 105);
+}
+.logo:hover {
+    color: rgb(105, 255, 105);
+}
+.hello {
+    color: rgb(105, 255, 105);
+}
+.home {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    height: 70vh;
+    flex-direction: row-reverse;
+}
+.homecontent h1 {
+    font-size: x-large;
+    font-weight: 800;
+    letter-spacing: 7px;
+    overflow: hidden;
+    white-space: nowrap; 
+    animation: typing 4s ;
+}
+.para1container{
+    display: inline-block;
+}
+.para1 {
+    font-size: large;
+    margin: 15px 0 20px;
+    padding: 0%;
+}
+.homecontent .downloadcv a{
+    font-size: large;
+    font-weight: 800;
+}
+.homecontent .downloadcv {
+    padding: 15px;
+    border: 2px solid rgb(105, 255, 105);
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgb(105, 255, 105);
+    gap: 15px; 
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    z-index: 1;
+    color: white;
+    text-decoration: none;
+}
+.cvarrow p a{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(105, 255, 105); 
+    display: flex;
+    margin-left: 20px;
+}
+.cvcontainer {
+    align-items: center;
+    white-space: nowrap;
+    display: flex; 
+}
+.homecontent .downloadcv {
+    position: relative; 
+    overflow: hidden; 
+    display: inline-block; 
+    font-size: larger; 
+    font-weight: 500; 
+    padding: 15px 25px; 
+    border: 2px solid rgb(105, 255, 105); 
+    border-radius: 50px; 
+    box-shadow: 0 0 10px rgb(105, 255, 105); 
+}
+.homecontent .downloadcv a {
+    position: relative; 
+    text-decoration: none; 
+    color: white; 
+    z-index: 1; 
+}
+.homecontent .downloadcv::before {
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    width: 0%;
+    height: 100%; 
+    background-color: rgb(105, 255, 105);
+    z-index: 0; 
+    transition: none;
+}
+.homecontent .downloadcv:hover::before {
+    animation: fillRightToLeft 0.5s forwards ease-in-out;
+}
+.homecontent .downloadcv:hover a {
+    color: rgb(0, 0, 0); 
+}
+.cvarrow a:hover {
+    color: white;
+}
+.myphoto {
+    display: flex;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    margin: 20px;
+}
+.myphoto .photobox {
+    width: 32vw;
+    height: 32vw;
+    background-color: rgb(105, 255, 105);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+    position: relative;
+    padding: 3px;
+    box-shadow: 0 0 15px rgb(105, 255, 105);
+    transition: background-color 0.5s ease-in-out;
+}
+.myphoto .photobox .photo {
+    width: 100%;
+    height: 100%;
+    background-color: #18122b;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.myphoto .photobox .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%; 
+    position: relative;
+    z-index: 2; 
+}
+.myphoto .photobox .photo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: white; 
+    z-index: 1; 
+}
+.myphoto .photobox:hover .photo::before {
+    animation: fillLefttToRight 0.6s forwards ease-in-out;
+}
+.about {
+    color: white;
+    background-color: #29224b;
+    text-align: center;
+    margin: 0px 30px 0;
+    padding: 10px;
+    border-radius: 40px;
+}
+.aboutcontent p{
+    border: 3px solid;
+    padding: 20px;
+    margin: 0;
+    border-radius: 20px;
+    margin: 30px;
+}
+.aboutcontent h3 {
+    font-size: x-large;
+    letter-spacing: 5px;
+    font-weight: 700px;
+}
+.about .aboutcontent h3:hover {
+    color: rgb(105, 255, 105);
+}
+.abouttablecontent {
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px; 
+    text-align: center; 
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.abouttable2 {
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px; 
+    text-align: center; 
+    padding: 20px;
+    flex-wrap: wrap;
+}
+table {
+    width: 30%; 
+    border-collapse: collapse; 
+    text-align: center;
+}
+table th, table td {
+    border: 1px solid rgba(0, 0, 0, 0); 
+}
+.services {
+    color: white;
+    background-color: #29224b;
+    text-align: center;
+    margin: 0px 30px 0;
+    padding: 10px;
+    border-radius: 40px;
+    margin: 30px;
+}
+.services h3 {
+    font-size: x-large;
+    letter-spacing: 5px;
+    font-weight: 700px;
+}
+.services h3:hover {
+    color: rgb(105, 255, 105);
+}
+.service-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    max-width: 800px;
+}
+.service-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+.service-item p {
+    flex: 1;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+}
+.contactcontent h3 {
+    font-size: x-large;
+    letter-spacing: 5px;
+    font-weight: 700px;
+    color: white;
+}
+.contactcontent h3:hover {
+    color: rgb(105, 255, 105);
+}
+.contactcontent {
+    text-align: center;
+}
+.message {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.message form {
+    margin: 0px 20px 0px;
+}
+.contact-form {
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    padding: 10px;
+}
+footer {
+    background-color: #241946;
+    padding: 5px;
+    text-align: center;
+}
+.info p:hover {
+    color: rgb(105, 255, 105);
+}
+.info h2:hover {
+    color: rgb(105, 255, 105);
+}
+footer {
+    background-color: #241946;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+@keyframes typing {
+    from { 
+        width: 0; 
+    }
+    to { 
+        width: 100%; 
+    }
+}
+@keyframes fillRightToLeft {
+    0% {
+        width: 0%; 
+        right: 0; 
+    }
+    100% {
+        width: 100%; 
+        right: 0; 
+    }
+}
+@keyframes fillLefttToRight {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+    100% {
+        width: 100%;
+        left: 0;
+    }
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    .para1container {
+        width: 90%; 
+        padding: 15px;
+    }
+    .para1 {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    .navbar ul li {
+        padding: 10px;
+    }
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+        height: auto;
+    }
+    .homecontent h1 {
+        font-size: large;
+        letter-spacing: 3px;
+    }
+    .homecontent .downloadcv {
+        padding: 10px;
+        font-size: medium;
+    }
+    .cvcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .myphoto {
+        justify-content: center;
+        margin: 20px auto;
+    }
+    .myphoto .photobox {
+        width: 50vw;
+        height: 50vw;
+    }
+    .abouttablecontent,.abouttable2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    table {
+        width: 98%;
+        margin-bottom: 10px;
+    }
+    .service-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .service-item img {
+        margin-bottom: 10px;
+    }
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+    }
+    .contactcontent {
+        text-align: center;
+        padding: 10px;
+    }
+    .social {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .social a {
+        margin: 5px;
+    }
+}
+
+
