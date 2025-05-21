@@ -340,6 +340,7 @@ footer {
     text-align: center;
     color: white;
 }
+    
 @keyframes typing {
     from { 
         width: 0; 
@@ -446,5 +447,74 @@ footer {
         margin: 5px;
     }
 }
+.projectscontent {
+    padding: 40px;
+    color: white;
+}
+
+.projectscontent h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white; 
+}
+
+.projectstable {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.projectstable table {
+    border: 1px solid #ccc;
+    width: 320px;
+    max-width: 100%;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projectstable table:hover {
+    background-color: #38d67a; 
+    color: white;
+    transform: translateY(-5px);
+}
+
+.projectstable .img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .projectscontent {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .projectstable {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectstable table {
+        width: 90%;
+    }
+
+    .projectscontent h3 {
+        font-size: 22px;
+    }
+
+    .projectstable td {
+        font-size: 14px;
+    }
+
+    .projectstable .img img {
+        width: 100%;
+        max-height: 160px;
+        object-fit: cover;
+    }
+}
+
 
 
